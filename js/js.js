@@ -1,3 +1,26 @@
+const colorsli = document.querySelector(".ellips .walaa .nona");
+
+
+colorsli.addEventListener("click" , (e) => {
+
+    if (!e.target.classList.contains("bool")) {
+
+    e.target.classList.add("bool");
+    document.documentElement.style.setProperty('--main-color','#9e9e9e');
+    document.documentElement.style.setProperty('--transparent-color','white');
+ 
+    document.documentElement.style.setProperty('--secound-color','#27323E');
+
+    }
+    else{
+        e.target.classList.remove("bool");
+        document.documentElement.style.setProperty('--main-color','#27323E');
+        document.documentElement.style.setProperty('--secound-color','white');
+        document.documentElement.style.setProperty('--transparent-color','#212529');
+
+    }
+  
+});
 
 
 
