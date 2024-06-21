@@ -84,13 +84,11 @@ h1 {
 /* start header  */
 header {
   position: absolute;
-  left: 0;
   width: 100%;
   z-index: 2;
-  height: 40px;
+  height: 50px;
 }
 header .container {
-  height: 65px;
     padding: 5px ;
     width: 100%;
     position: fixed;
@@ -394,7 +392,7 @@ gap: 250px;
   font-weight:500 ;
   line-height: 1.6;
 }
-.p-5{
+.p-50{
   padding: 5px;
 }
 .m-5{
@@ -448,13 +446,18 @@ gap: 250px;
   overflow: hidden;
   position: relative;
 }
-
+@media (min-width: 992px) {
+  .imgs-container .box  .box{
+display:flex ;
+flex-direction: column;
+  }
+}
 @media (min-width: 768px) {
   .portfolio .imgs-container .box {
     flex-basis: 50%;
   }
 }
-@media (min-width: 1199px) {
+@media (min-width: 1200px) {
   .portfolio .imgs-container .box {
     flex-basis: 25%;
   }
@@ -470,18 +473,28 @@ gap: 250px;
   left: -25%;
 
 }
-@media (max-width: 767px){
+.yara img {
+  margin: 5px;
+
+}
+@media (max-width: 1200px){
+  .yara {
+  position: relative;
+  text-align: center;
+  }
+  .yara .boximages{
+
+  }
   .yara .nyu{
     transform: rotate(0deg);
     left: 0;
-  
-
+    position: relative;
+    display: flex;
+    flex-direction: column;
   }
-}
-.yara img {
-  margin: 2px;
 
 }
+
 
 
 @media (max-width: 767px){
@@ -510,6 +523,7 @@ textarea{
     color: #ddd;
     border-radius: 30px;
 }
+
 .sub{
   border-radius: 60px;
   width:130px;
@@ -537,6 +551,118 @@ textarea{
 .pb-6{
   padding-bottom: 15px;
 }
+
+@media (max-width: 767px){
+  .getbox .name {
+    display: flex;
+    flex-direction:column ;
+  }
+}
+
+
+.yara .all{
+  left: 44%;
+  }
+  @media (max-width: 1200px){
+  .get .getbox{
+  display: flex;
+  flex-direction: column;
+    }
+  }
+  .get .all{
+    left: -2%;
+    }
+/* end getboxs */
+.tes{
+  background-color: var(--main-color);
+}
+.tes h1{
+  color: var(--secound-color);
+}
+.tes .tescard{
+  margin: 5px;
+  background-color: #D9D5D5;
+  color: #000;
+}
+.tes .tescard h4{
+  margin: 20px;
+  padding-top: 20px;
+
+}
+.card-body img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 5px;
+}
+.tes .tescard .star{
+  margin: 5px;
+  padding: 10px;
+}
+
+/* end tes */
+.noun{
+  padding-top: 200px;
+  position: relative;
+}
+
+.noun1 .web{
+  margin: 20px;
+  padding: 10px;
+  position: relative;
+}
+.noun1 .web img {
+  width: 600px;
+  height: 100px;
+  border-radius: 20px;
+  object-fit: cover;
+  z-index: 1000;
+  position: relative;
+}
+.noun1 .web p{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 40px;
+  font-size: 12px;
+}
+.noun1 i{
+  padding: 10px;
+}
+.noun2 img{
+width: 450px;
+height: 300px;
+object-fit: cover;
+z-index: 0;
+}
+.noun2 .imag::before{
+  content: '';
+  position: absolute;
+  top:170px;
+  bottom: 0px;
+  width: 50px;
+  height: 330px;
+  background:#FC4A1A;
+  margin-left: -50px;
+border-radius: 0 20px;
+}
+.noun2 .imag::after{
+  content: '';
+  position: absolute;
+  bottom: 348px;
+  height: 50px;
+  width: 500px;
+  background:#FC4A1A;
+  left: 677px;
+border-radius: 0 20px;
+}
+
 
 
 
