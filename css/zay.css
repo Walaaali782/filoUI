@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+/* Start Variables */
+:root {
+  --main-color: #27323E;
+  --transparent-color:  #212529;
+  --secound-color:white;
+  --section-padding: 100px;
+}
+/* End Variables */
+
+
+  /* start about  */
+.about {
+background-color: var(--main-color);
+ }
+ .about .text {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+   gap: 80px;
+   padding: 20px;
+ 
+ }
+ .about .text .content {
+  margin-top: 50px;
+  padding-top: 80px;
+  color: var(--secound-color);
+  padding-left: 20px;
+
+ }
+   .about .text .image  {
+    margin-top: 50px;
+    padding-top: 40px;
+  
+     padding-left:160px;
+}
+
+   @media (max-width: 768px) {
+    .about .text .content h1 {
+      font-size: 35px;
+      }
+     .about .text .image  {
+   padding-left: 0;
+text-align: center;
+ 
+    }
+   .about .text {
+     padding: 0px;
+   
+   }
+ }
+ 
+ 
+/* end about/
+/* start walla */
+.walla .image img {
+  width: 250px;
+  border-radius: 50%;
+  border: 2px solid #df4810;
+}
+.walla .image  p{
+  font-size: 17px;
+  margin: 5px;
+  font-weight: 600;
+}
+@media (max-width: 767px){
+.walla .image img {
+    width: 350px;
+}
+}
+@media (max-width: 920px) {
+  .walla .txt {
+    text-align: center;
+    margin: auto;
+    margin-left: 0;
+  }
+ .all{
+    display: none;
+  }
+  .walla .image  {
+  padding-left: 0px;
+  }
+}
+
+
+/* end  walla  */
+/* start server */
+ .server{
+background-color: var(--main-color);
+color: var(--secound-color);
+position: relative;
+text-align: center;
+ }
+ .server .row .card{
+  display: flex;
+  flex-direction: column;
+ 
+}
+.card .one1{
+  margin-top: 30px;
+}
+.card svg{
+  margin-top: 20px;
+  padding-right: 110px;
+
+}
+.server  .card img{
+height: 550px;
+
+}
+.main-title .all{
+  left: 37%;
+    bottom: -67px;
+}
+@media (max-width: 767px){
+
+  .card img{
+     display: none;
+  }
+  .card svg{
+
+    padding-right: 0;
+  }
+  .server .row .card.fff{
+    left: -85px;
+  }
+  .server .row .card.lll{
+    left: 5px;
+  }
+}
+  /* end server */
+/* start vimag */
+.vimag{
+  background-color: var(--transparent-color);
+  color: var(--secound-color);
+}
+
+/* Start Footer */
+.footer {
+  background-color: var(--main-color);
+  color: var(--secound-color);
+}
+.footer .copyright > span {
+  color: var(--green-color);
+}
+.footer .copyright div span {
+  color: var(--blue-color);
+}
+.footer li{
+  font-size: 10px;
+}
+.footer .new ul input {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 767px){
+  .name {
+    display: flex;
+    flex-direction:column ;
+  }
+}
+/* End Footer */
