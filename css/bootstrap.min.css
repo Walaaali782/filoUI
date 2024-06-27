@@ -750,6 +750,13 @@ font-size: 10px;
     .noun2 {
 display: none;
     }
+    .noun1.tleft .mnk{
+      float: left;
+      }
+      .web {
+        float: left;
+          }
+        
     }
 
 
